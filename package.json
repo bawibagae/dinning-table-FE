@@ -1,0 +1,28 @@
+{
+  "name": "serendipity-table-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "우연한 식탁 (Serendipity Table) - React + React Native Web + Vite + Three.js + GSAP ScrollTrigger + Emotion Styled",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:matching-flow": "node ./src/data/test-table-matching-flow.js",
+    "test:demo-catalog": "node ./src/data/test-demo-catalog.js"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "gsap": "^3.12.5",
+    "lucide-react": "^0.446.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-native-web": "^0.19.12",
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.2",
+    "vite": "^5.4.8"
+  }
+}

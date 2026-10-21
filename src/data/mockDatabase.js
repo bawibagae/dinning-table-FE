@@ -1,0 +1,1017 @@
+/**
+ * 초기 시드 데이터 & PRD 매칭 평가 엔진 (GitHub Pages 정적 배포 및 Node.js 백엔드 완벽 호환)
+ */
+
+export const INITIAL_STORE = {
+  users: [
+    {
+      id: 'usr-admin',
+      email: 'admin@whatsuphouse.kr',
+      auth_provider: 'EMAIL',
+      role: 'ADMIN',
+      name: '와썹하우스 운영자',
+      phone: '010-0000-0000',
+      age: 31,
+      birth_year: 1996,
+      gender: 'F',
+      job_category: '커뮤니티 디렉터 / CTO',
+      account_status: 'ACTIVE',
+      profile_completed: true,
+      insta_id: '@whatsup_house_official',
+      mbti: 'ENFJ',
+      interests: ['맛집 탐방', '스타트업/커리어', '전시/예술', '사이드프로젝트'],
+      vibe_self: ['대화를 이끄는', '리액션 부자', '따뜻하고 다정한'],
+      preferred_partner: ['대화가 잘 통하는', '긍정적인 에너지', '새로운 인사이트'],
+      preferred_regions: ['홍대/연남', '성수/건대', '강남/역삼'],
+      budget_range: '2~4만원',
+      food_allergies: '없음',
+      privacy_agreed: true,
+    },
+    {
+      id: 'usr-1',
+      email: 'minjun@example.com',
+      auth_provider: 'GOOGLE',
+      role: 'USER',
+      name: '김민준',
+      phone: '010-2841-9102',
+      age: 29,
+      birth_year: 1998,
+      gender: 'M',
+      job_category: 'IT/프로덕트 디자이너',
+      account_status: 'ACTIVE',
+      profile_completed: true,
+      insta_id: '@minjun.design',
+      mbti: 'ENFP',
+      interests: ['맛집 탐방', '전시/예술', '사이드프로젝트', '영화/OTT'],
+      vibe_self: ['리액션 부자', '유머러스한', '호기심 많은'],
+      preferred_partner: ['대화가 잘 통하는', '취향이 뚜렷한', '리액션 좋은'],
+      preferred_regions: ['홍대/연남', '성수/건대'],
+      budget_range: '2~4만원',
+      food_allergies: '오이 제외',
+      privacy_agreed: true,
+    },
+    {
+      id: 'usr-2',
+      email: 'seoyeon@example.com',
+      auth_provider: 'EMAIL',
+      role: 'USER',
+      name: '이서연',
+      phone: '010-3920-1184',
+      age: 27,
+      birth_year: 2000,
+      gender: 'F',
+      job_category: '브랜드 마케터',
+      account_status: 'ACTIVE',
+      profile_completed: true,
+      insta_id: '@seoyeon_mood',
+      mbti: 'INFJ',
+      interests: ['맛집 탐방', '전시/예술', '독서/인문', '여행/산책'],
+      vibe_self: ['편안한 경청러', '따뜻하고 다정한', '깊이 있는 대화'],
+      preferred_partner: ['대화가 잘 통하는', '배려심 깊은', '취향이 뚜렷한'],
+      preferred_regions: ['홍대/연남', '한남/이태원'],
+      budget_range: '2~4만원',
+      food_allergies: '없음',
+      privacy_agreed: true,
+    },
+    {
+      id: 'usr-3',
+      email: 'dohyun@example.com',
+      auth_provider: 'FACEBOOK',
+      role: 'USER',
+      name: '박도현',
+      phone: '010-7712-4509',
+      age: 31,
+      birth_year: 1996,
+      gender: 'M',
+      job_category: '핀테크 백엔드 개발자',
+      account_status: 'ACTIVE',
+      profile_completed: true,
+      insta_id: '@dohyun.dev',
+      mbti: 'INTJ',
+      interests: ['맛집 탐방', '사이드프로젝트', '스타트업/커리어', '재테크'],
+      vibe_self: ['차분하고 논리적인', '깊이 있는 대화', '호기심 많은'],
+      preferred_partner: ['새로운 인사이트', '대화가 잘 통하는', '긍정적인 에너지'],
+      preferred_regions: ['홍대/연남', '강남/역삼'],
+      budget_range: '3~5만원',
+      food_allergies: '갑각류 알레르기',
+      privacy_agreed: true,
+    },
+    {
+      id: 'usr-4',
+      email: 'jiwoo@example.com',
+      auth_provider: 'GOOGLE',
+      role: 'USER',
+      name: '최지우',
+      phone: '010-5501-8832',
+      age: 26,
+      birth_year: 2001,
+      gender: 'F',
+      job_category: '콘텐츠 에디터',
+      account_status: 'ACTIVE',
+      profile_completed: true,
+      insta_id: '@jiwoo.archive',
+      mbti: 'ENFJ',
+      interests: ['전시/예술', '맛집 탐방', '영화/OTT', '독서/인문'],
+      vibe_self: ['대화를 이끄는', '리액션 부자', '따뜻하고 다정한'],
+      preferred_partner: ['유머러스한', '대화가 잘 통하는', '취향이 뚜렷한'],
+      preferred_regions: ['홍대/연남', '성수/건대'],
+      budget_range: '2~4만원',
+      food_allergies: '없음',
+      privacy_agreed: true,
+    },
+    {
+      id: 'usr-5',
+      email: 'hyunwoo@example.com',
+      auth_provider: 'EMAIL',
+      role: 'USER',
+      name: '정현우',
+      phone: '010-6321-3390',
+      age: 32,
+      birth_year: 1995,
+      gender: 'M',
+      job_category: 'AI 스타트업 PM',
+      account_status: 'ACTIVE',
+      profile_completed: true,
+      insta_id: '@hyunwoo.pm',
+      mbti: 'ENTP',
+      interests: ['스타트업/커리어', '사이드프로젝트', '러닝/피트니스', '맛집 탐방'],
+      vibe_self: ['대화를 이끄는', '유머러스한', '에너지 넘치는'],
+      preferred_partner: ['새로운 인사이트', '유머러스한', '대화가 잘 통하는'],
+      preferred_regions: ['성수/건대', '강남/역삼'],
+      budget_range: '3~5만원',
+      food_allergies: '없음',
+      privacy_agreed: true,
+    },
+    {
+      id: 'usr-6',
+      email: 'yerin@example.com',
+      auth_provider: 'GOOGLE',
+      role: 'USER',
+      name: '한예린',
+      phone: '010-9182-7410',
+      age: 28,
+      birth_year: 1999,
+      gender: 'F',
+      job_category: '건축 디자이너',
+      account_status: 'ACTIVE',
+      profile_completed: true,
+      insta_id: '@yerin.arch',
+      mbti: 'ISFP',
+      interests: ['전시/예술', '여행/산책', '사진/필름', '맛집 탐방'],
+      vibe_self: ['편안한 경청러', '감성적인', '따뜻하고 다정한'],
+      preferred_partner: ['배려심 깊은', '취향이 뚜렷한', '편안한 분위기'],
+      preferred_regions: ['성수/건대', '한남/이태원'],
+      budget_range: '2~4만원',
+      food_allergies: '땅콩 알레르기',
+      privacy_agreed: true,
+    },
+    {
+      id: 'usr-7',
+      email: 'taeyoon@example.com',
+      auth_provider: 'EMAIL',
+      role: 'USER',
+      name: '윤태윤',
+      phone: '010-4410-2298',
+      age: 30,
+      birth_year: 1997,
+      gender: 'M',
+      job_category: '데이터 사이언티스트',
+      account_status: 'ACTIVE',
+      profile_completed: true,
+      insta_id: '@taeyoon.ds',
+      mbti: 'INTP',
+      interests: ['스타트업/커리어', '독서/인문', '보드게임', '재테크'],
+      vibe_self: ['차분하고 논리적인', '호기심 많은', '편안한 경청러'],
+      preferred_partner: ['새로운 인사이트', '대화가 잘 통하는', '배려심 깊은'],
+      preferred_regions: ['강남/역삼', '성수/건대'],
+      budget_range: '2~4만원',
+      food_allergies: '없음',
+      privacy_agreed: true,
+    },
+    {
+      id: 'usr-8',
+      email: 'subin@example.com',
+      auth_provider: 'GOOGLE',
+      role: 'USER',
+      name: '강수빈',
+      phone: '010-8129-5501',
+      age: 27,
+      birth_year: 2000,
+      gender: 'F',
+      job_category: 'UX 리서처',
+      account_status: 'ACTIVE',
+      profile_completed: true,
+      insta_id: '@subin.ux',
+      mbti: 'ESFJ',
+      interests: ['러닝/피트니스', '맛집 탐방', '여행/산책', '전시/예술'],
+      vibe_self: ['리액션 부자', '긍정적인 에너지', '따뜻하고 다정한'],
+      preferred_partner: ['유머러스한', '대화가 잘 통하는', '긍정적인 에너지'],
+      preferred_regions: ['강남/역삼', '한남/이태원', '홍대/연남'],
+      budget_range: '2~4만원',
+      food_allergies: '없음',
+      privacy_agreed: true,
+    },
+  ],
+
+  venues: [
+    {
+      id: 'ven-1',
+      name: '디어리스트 연남 (Dearest Yeonnam)',
+      region: '홍대/연남',
+      category: '미식 & 취향',
+      address: '서울 마포구 동교로46길 32 2층',
+      map_url: 'https://map.naver.com/p/search/연남동식당',
+      price_range: '1인 2.8~3.8만원',
+      reservation_name: '와썹하우스 우연한식탁 1번 테이블',
+      max_tables: 4,
+      reserved_tables: 2,
+      capacity_per_table: 6,
+      status: 'AVAILABLE',
+    },
+    {
+      id: 'ven-2',
+      name: '성수 사운즈 테이블 (Seongsu Table)',
+      region: '성수/건대',
+      category: '크리에이터 & 예술',
+      address: '서울 성동구 연무장길 45 1층',
+      map_url: 'https://map.naver.com/p/search/성수동다이닝',
+      price_range: '1인 2.5~3.5만원',
+      reservation_name: '와썹하우스 우연한식탁 성수팀',
+      max_tables: 3,
+      reserved_tables: 1,
+      capacity_per_table: 6,
+      status: 'AVAILABLE',
+    },
+    {
+      id: 'ven-3',
+      name: '테헤란 비스트로 랩 (Teheran Bistro)',
+      region: '강남/역삼',
+      category: '커리어 & 인사이트',
+      address: '서울 강남구 테헤란로28길 19 프라이빗룸',
+      map_url: 'https://map.naver.com/p/search/역삼동비스트로',
+      price_range: '1인 3.0~4.2만원',
+      reservation_name: '와썹하우스 우연한식탁 강남팀',
+      max_tables: 3,
+      reserved_tables: 2,
+      capacity_per_table: 6,
+      status: 'AVAILABLE',
+    },
+    {
+      id: 'ven-4',
+      name: '한남 오스테리아 르메르 (Hannam Osteria)',
+      region: '한남/이태원',
+      category: '북토크 & 영화',
+      address: '서울 용산구 이태원로54길 68 루프탑',
+      map_url: 'https://map.naver.com/p/search/한남동오스테리아',
+      price_range: '1인 3.2~4.5만원',
+      reservation_name: '와썹하우스 우연한식탁 한남팀',
+      max_tables: 2,
+      reserved_tables: 1,
+      capacity_per_table: 6,
+      status: 'AVAILABLE',
+    },
+    {
+      id: 'ven-5',
+      name: '을지로 노포살롱 만선 (Euljiro Salon)',
+      region: '종로/을지로',
+      category: '미식 & 취향',
+      address: '서울 중구 을지로14길 21 3층',
+      map_url: 'https://map.naver.com/p/search/힙지로식당',
+      price_range: '1인 2.2~3.2만원',
+      reservation_name: '와썹하우스 우연한식탁 을지로팀',
+      max_tables: 2,
+      reserved_tables: 2,
+      capacity_per_table: 6,
+      status: 'FULL',
+    },
+  ],
+
+  diningTables: [
+    {
+      id: 'tbl-1',
+      slot_id: 'slot-1',
+      title: '연남동 금요일 밤, 식사와 디자인·전시 스몰토크 식탁',
+      region: '홍대/연남',
+      category: '미식 & 취향',
+      event_date: '2026-10-23',
+      event_time: '19:30',
+      min_members: 4,
+      max_members: 6,
+      venue_id: 'ven-1',
+      match_status: 'CONFIRMED',
+      match_score: 94,
+      score_breakdown: {
+        ageGap: 5,
+        ageScore: 25,
+        genderBalance: '남 2 : 여 2 (균형)',
+        genderScore: 20,
+        mbtiHarmony: 'ENFP · INFJ · INTJ · ENFJ (NF/NT 시너지 96%)',
+        mbtiScore: 20,
+        commonInterests: ['맛집 탐방', '전시/예술', '사이드프로젝트'],
+        interestScore: 15,
+        partnerFitScore: 10,
+        feedbackLoopBonus: 4,
+      },
+      curation_reason:
+        '연장자(31세)와 막내(26세)의 나이 차이가 5세 이내로 필수 조건(8세 이내)을 완벽히 충족하며, 남녀 성비 2:2 균형, NF/NT 직관형 중심의 MBTI 대화 케미스트리, 그리고 [맛집 탐방 · 전시/예술] 공통 관심사가 일치하여 94점으로 자동 확정된 식탁입니다.',
+      reallocation_count: 0,
+      confirmed_at: '2026-10-15T10:30:00Z',
+      member_ids: ['usr-1', 'usr-2', 'usr-3', 'usr-4'],
+      tags: ['나이차 5세 이내', '맛집 탐방', '전시/예술', '남녀 2:2 균형', '초면 환영'],
+    },
+    {
+      id: 'tbl-2',
+      slot_id: 'slot-2',
+      title: '성수 크리에이터 & 사이드프로젝트 영감 교류 식탁',
+      region: '성수/건대',
+      category: '크리에이터 & 예술',
+      event_date: '2026-10-24',
+      event_time: '19:00',
+      min_members: 4,
+      max_members: 6,
+      venue_id: 'ven-2',
+      match_status: 'WAITING',
+      match_score: 91,
+      score_breakdown: {
+        ageGap: 4,
+        ageScore: 25,
+        genderBalance: '남 2 : 여 1 (모집중)',
+        genderScore: 18,
+        mbtiHarmony: 'ENTP · ISFP · INTP (다양성 & 창의 조합)',
+        mbtiScore: 19,
+        commonInterests: ['사이드프로젝트', '전시/예술', '맛집 탐방'],
+        interestScore: 15,
+        partnerFitScore: 10,
+        feedbackLoopBonus: 4,
+      },
+      curation_reason:
+        '현재 28세~32세(나이 차이 4세) 직장인 3명이 모여 있으며, IT·디자인·건축 분야의 성향 시너지가 높은 테이블입니다. 모집 마감 후 결제와 필수 조건을 검증해 확정 여부를 안내합니다.',
+      reallocation_count: 1,
+      confirmed_at: null,
+      member_ids: ['usr-5', 'usr-6', 'usr-7'],
+      tags: ['나이차 4세 이내', '사이드프로젝트', '크리에이터', '1명 합류시 자동확정'],
+    },
+    {
+      id: 'tbl-3',
+      slot_id: 'slot-3',
+      title: '강남 금요일 퇴근 후, 커리어·재테크·운동 밸런스 식탁',
+      region: '강남/역삼',
+      category: '커리어 & 인사이트',
+      event_date: '2026-10-23',
+      event_time: '20:00',
+      min_members: 4,
+      max_members: 6,
+      venue_id: 'ven-3',
+      match_status: 'WAITING',
+      match_score: 89,
+      score_breakdown: {
+        ageGap: 5,
+        ageScore: 24,
+        genderBalance: '남 2 : 여 1 (모집중)',
+        genderScore: 18,
+        mbtiHarmony: 'INTJ · ENTP · ESFJ (인사이트 & 리액션 조화)',
+        mbtiScore: 18,
+        commonInterests: ['스타트업/커리어', '러닝/피트니스', '재테크'],
+        interestScore: 15,
+        partnerFitScore: 10,
+        feedbackLoopBonus: 4,
+      },
+      curation_reason:
+        '강남/역삼권 직장인들의 퇴근 후 네트워킹 및 갓생 루틴(러닝·커리어) 대화 식탁입니다. 연장자-막내 나이차 5세 이내로 편안하고 밀도 높은 대화가 보장됩니다.',
+      reallocation_count: 0,
+      confirmed_at: null,
+      member_ids: ['usr-3', 'usr-5', 'usr-8'],
+      tags: ['직장인 커리어', '러닝/운동', '나이차 5세 이내', '프라이빗 룸'],
+    },
+    {
+      id: 'tbl-4',
+      slot_id: 'slot-4',
+      title: '한남동 토요일 저녁, 영화·독서·취향 깊은 대화 식탁',
+      region: '한남/이태원',
+      category: '북토크 & 영화',
+      event_date: '2026-10-24',
+      event_time: '18:30',
+      min_members: 4,
+      max_members: 6,
+      venue_id: 'ven-4',
+      match_status: 'WAITING',
+      match_score: 92,
+      score_breakdown: {
+        ageGap: 2,
+        ageScore: 25,
+        genderBalance: '여 3 : 남 0 (모집중)',
+        genderScore: 16,
+        mbtiHarmony: 'INFJ · ISFP · ESFJ (공감 & 감성 시너지)',
+        mbtiScore: 20,
+        commonInterests: ['전시/예술', '독서/인문', '여행/산책'],
+        interestScore: 17,
+        partnerFitScore: 10,
+        feedbackLoopBonus: 4,
+      },
+      curation_reason:
+        '26세~28세 또래들이 모여 영화, 책, 여행 이야기를 나누는 따뜻한 감성 식탁입니다. 경청과 리액션이 좋은 멤버들로 구성되어 초면의 어색함이 전혀 없습니다.',
+      reallocation_count: 0,
+      confirmed_at: null,
+      member_ids: ['usr-2', 'usr-6', 'usr-8'],
+      tags: ['독서/영화', '감성 루프탑', '경청과 공감', '나이차 2세 이내'],
+    },
+    {
+      id: 'tbl-5',
+      slot_id: 'slot-5',
+      title: '연남동 일요일 브런치 & 위켄드 러닝·미식 클럽',
+      region: '홍대/연남',
+      category: '액티비티 & 러닝',
+      event_date: '2026-10-25',
+      event_time: '18:00',
+      min_members: 4,
+      max_members: 6,
+      venue_id: 'ven-1',
+      match_status: 'WAITING',
+      match_score: 88,
+      score_breakdown: {
+        ageGap: 5,
+        ageScore: 23,
+        genderBalance: '남 1 : 여 1 (자동재배치 대기)',
+        genderScore: 18,
+        mbtiHarmony: 'ENFP · ESFJ (에너지 & 친화력 최고)',
+        mbtiScore: 19,
+        commonInterests: ['러닝/피트니스', '맛집 탐방', '여행/산책'],
+        interestScore: 14,
+        partnerFitScore: 10,
+        feedbackLoopBonus: 4,
+      },
+      curation_reason:
+        '운동과 건강한 미식을 좋아하는 밝은 에너지의 식탁입니다. 현재 2명이 신청하여 마감 시 4명 미만일 경우 PRD 7.4 규칙에 따라 동일 지역/날짜의 다른 미확정 테이블로 자동 병합·재배치됩니다.',
+      reallocation_count: 1,
+      confirmed_at: null,
+      member_ids: ['usr-8', 'usr-2', 'usr-4'],
+      tags: ['러닝/피트니스', '자동재배치 보장', '밝은 에너지', '나이차 5세'],
+    },
+    {
+      id: 'tbl-full',
+      slot_id: 'slot-1',
+      title: '[마감완료] 성수 금요일 소셜 다이닝 모임 6인 완전체',
+      region: '성수/건대',
+      category: '미식 & 취향',
+      event_date: '2026-10-23',
+      event_time: '19:30',
+      min_members: 4,
+      max_members: 6,
+      venue_id: 'ven-2',
+      match_status: 'CONFIRMED',
+      match_score: 96,
+      score_breakdown: {
+        ageGap: 6,
+        ageScore: 25,
+        genderBalance: '남 3 : 여 3 (완벽 균형)',
+        genderScore: 20,
+        mbtiHarmony: 'ENFP · INFJ · INTJ · ENFJ · ENTP · ISFP',
+        mbtiScore: 20,
+        commonInterests: ['맛집 탐방', '전시/예술'],
+        interestScore: 17,
+        partnerFitScore: 10,
+        feedbackLoopBonus: 4,
+      },
+      curation_reason: '6인 정원이 모두 채워져 마감된 테이블입니다.',
+      reallocation_count: 0,
+      confirmed_at: '2026-10-14T18:00:00Z',
+      member_ids: ['usr-1', 'usr-2', 'usr-3', 'usr-4', 'usr-5', 'usr-6'],
+      tags: ['6인 정원 마감', '남녀 3:3'],
+    },
+  ],
+
+  applications: [
+    {
+      id: 'app-1',
+      user_id: 'usr-1',
+      table_id: 'tbl-1',
+      slot_id: 'slot-1',
+      desired_regions: ['홍대/연남', '성수/건대'],
+      desired_dates: ['2026-10-23', '2026-10-24'],
+      ticket_type: 'ONE_TIME',
+      amount: 9900,
+      application_status: 'SUBMITTED',
+      payment_status: 'PAID',
+      match_status: 'CONFIRMED',
+      attendance_status: 'SCHEDULED',
+      match_reason: '나이차 5세 이내(필수 통과) · 관심사(미식/전시) 94% 일치 · 이전 만남 이력 없음(신규 인연 우대)',
+      refund_reason: null,
+      checked_in_at: null,
+      created_at: '2026-10-14T11:20:00Z',
+    },
+    {
+      id: 'app-2',
+      user_id: 'usr-2',
+      table_id: 'tbl-1',
+      slot_id: 'slot-1',
+      desired_regions: ['홍대/연남'],
+      desired_dates: ['2026-10-23'],
+      ticket_type: 'MEMBERSHIP_3M',
+      amount: 75000,
+      application_status: 'SUBMITTED',
+      payment_status: 'PAID',
+      match_status: 'CONFIRMED',
+      attendance_status: 'ATTENDED',
+      match_reason: 'INFJ-ENFP 최고의 대화 궁합 및 연남동 다이닝 선호 일치',
+      refund_reason: null,
+      checked_in_at: '2026-10-14T19:25:00Z',
+      created_at: '2026-10-14T12:10:00Z',
+    },
+    {
+      id: 'app-3',
+      user_id: 'usr-3',
+      table_id: 'tbl-1',
+      slot_id: 'slot-1',
+      desired_regions: ['홍대/연남', '강남/역삼'],
+      desired_dates: ['2026-10-23'],
+      ticket_type: 'ONE_TIME',
+      amount: 9900,
+      application_status: 'SUBMITTED',
+      payment_status: 'PAID',
+      match_status: 'CONFIRMED',
+      attendance_status: 'SCHEDULED',
+      match_reason: '사이드프로젝트 및 미식 관심사 일치 · 연령 조건(31세) 적합',
+      refund_reason: null,
+      checked_in_at: null,
+      created_at: '2026-10-14T13:05:00Z',
+    },
+    {
+      id: 'app-4',
+      user_id: 'usr-4',
+      table_id: 'tbl-1',
+      slot_id: 'slot-1',
+      desired_regions: ['홍대/연남', '성수/건대'],
+      desired_dates: ['2026-10-23'],
+      ticket_type: 'MEMBERSHIP_1M',
+      amount: 35000,
+      application_status: 'SUBMITTED',
+      payment_status: 'PAID',
+      match_status: 'CONFIRMED',
+      attendance_status: 'SCHEDULED',
+      match_reason: '전시/예술 및 영화 취향 일치 · 성비 2:2 균형 완성',
+      refund_reason: null,
+      checked_in_at: null,
+      created_at: '2026-10-14T14:40:00Z',
+    },
+    {
+      id: 'app-5',
+      user_id: 'usr-5',
+      table_id: 'tbl-2',
+      slot_id: 'slot-2',
+      desired_regions: ['성수/건대', '강남/역삼'],
+      desired_dates: ['2026-10-24'],
+      ticket_type: 'ONE_TIME',
+      amount: 9900,
+      application_status: 'SUBMITTED',
+      payment_status: 'PAID',
+      match_status: 'WAITING',
+      attendance_status: 'SCHEDULED',
+      match_reason: '성수/건대 크리에이터 테이블 매칭 대기 중 (현재 3/6명)',
+      refund_reason: null,
+      checked_in_at: null,
+      created_at: '2026-10-14T15:30:00Z',
+    },
+    {
+      id: 'app-6',
+      user_id: 'usr-1',
+      table_id: null,
+      slot_id: 'slot-5',
+      desired_regions: ['종로/을지로'],
+      desired_dates: ['2026-10-25'],
+      ticket_type: 'ONE_TIME',
+      amount: 9900,
+      application_status: 'SUBMITTED',
+      payment_status: 'REFUND_AVAILABLE',
+      match_status: 'ALTERNATIVE_OFFERED',
+      attendance_status: 'SCHEDULED',
+      match_reason:
+        '[STA-04 매칭 실패 대안 제시] 종로/을지로 일요일 시간대 4인 미만으로 대체 일정(성수/연남) 원클릭 이동 또는 100% 자동 환불 선택 가능',
+      refund_reason: null,
+      checked_in_at: null,
+      created_at: '2026-10-14T16:20:00Z',
+    },
+  ],
+
+  chatRooms: [
+    {
+      id: 'room-tbl-1',
+      table_id: 'tbl-1',
+      room_name: '🍷 [연남동] 금요일 밤 미식 & 전시 스몰토크 식탁 (4/6명)',
+      active_game_id: 'game-balance',
+      game_status: 'RUNNING',
+      current_round: 1,
+      messages: [
+        {
+          id: 'msg-1',
+          sender_id: 'SYSTEM',
+          sender_name: '우연한 식탁 AI 매니저',
+          message_type: 'SYSTEM',
+          content:
+            '🎉 [INF-04/05 자동 공지] 테이블 매칭이 확정되어 단체 채팅방이 자동 개설되었습니다! 매칭 전·후 개인정보 보호 정책(INF-06)에 따라 연락처 대신 닉네임·직군·MBTI·취향 키워드만 공개됩니다.',
+          created_at: '2026-10-15T09:00:00Z',
+        },
+        {
+          id: 'msg-2',
+          sender_id: 'SYSTEM',
+          sender_name: '큐레이션 봇',
+          message_type: 'CURATION',
+          content:
+            '✨ [왜 우리가 한 식탁에 모였을까요?] 평균 연령 28.2세(최대 나이차 5세 이내), 남녀 성비 균형, 그리고 [맛집 탐방 · 전시/예술 · 사이드프로젝트] 키워드가 94% 일치하는 멤버들입니다. 예약 식당: 디어리스트 연남 (금요일 19:30, 예약명: 와썹하우스 우연한식탁 1번 테이블)',
+          created_at: '2026-10-15T09:01:00Z',
+        },
+        {
+          id: 'msg-3',
+          sender_id: 'usr-1',
+          sender_name: '김민준 (IT 디자이너 · ENFP)',
+          message_type: 'USER',
+          content: '안녕하세요 여러분! 연남동 디어리스트 평소에도 가보고 싶던 식당인데 이렇게 매칭되어서 너무 반갑습니다 🙌',
+          created_at: '2026-10-15T09:15:00Z',
+        },
+        {
+          id: 'msg-4',
+          sender_id: 'usr-2',
+          sender_name: '이서연 (브랜드 마케터 · INFJ)',
+          message_type: 'USER',
+          content: '반갑습니다! 저도 전시랑 음식 취향이 비슷한데 공통 관심사가 딱 맞아서 신기해요 ㅎㅎ 금요일 저녁에 봬요!',
+          created_at: '2026-10-15T09:18:00Z',
+        },
+        {
+          id: 'msg-5',
+          sender_id: 'usr-4',
+          sender_name: '최지우 (콘텐츠 에디터 · ENFJ)',
+          message_type: 'USER',
+          content: '우와 분위기 너무 좋네요! 운영자님이 켜주신 아이스브레이킹 미니게임부터 같이 해봐요 😊',
+          created_at: '2026-10-15T09:22:00Z',
+        },
+      ],
+    },
+    {
+      id: 'room-tbl-2',
+      table_id: 'tbl-2',
+      room_name: '🎨 [성수동] 크리에이터 & 사이드프로젝트 영감 식탁',
+      active_game_id: null,
+      game_status: 'IDLE',
+      current_round: 0,
+      messages: [
+        {
+          id: 'msg-201',
+          sender_id: 'SYSTEM',
+          sender_name: '우연한 식탁 AI 매니저',
+          message_type: 'SYSTEM',
+          content:
+            '👋 성수 크리에이터 식탁 라운지에 오신 것을 환영합니다! 현재 3명이 모였으며 모집 마감 후 결제와 필수 조건을 검증해 확정 여부를 안내합니다.',
+          created_at: '2026-10-15T10:00:00Z',
+        },
+        {
+          id: 'msg-202',
+          sender_id: 'usr-5',
+          sender_name: '정현우 (AI 스타트업 PM · ENTP)',
+          message_type: 'USER',
+          content: '안녕하세요! 성수동 사운즈 테이블에서 사이드프로젝트 이야기 나눌 생각에 벌써 기대됩니다!',
+          created_at: '2026-10-15T10:05:00Z',
+        },
+      ],
+    },
+    {
+      id: 'room-tbl-3',
+      table_id: 'tbl-3',
+      room_name: '💼 [강남/역삼] 금요일 퇴근 후 커리어 & 러닝 밸런스 식탁',
+      active_game_id: null,
+      game_status: 'IDLE',
+      current_round: 0,
+      messages: [
+        {
+          id: 'msg-301',
+          sender_id: 'SYSTEM',
+          sender_name: '우연한 식탁 AI 매니저',
+          message_type: 'SYSTEM',
+          content: '💼 강남/역삼 커리어 & 러닝 밸런스 식탁 채팅방입니다. 운영자가 게임을 시작하면 상단에 아이스브레이킹 보드가 열립니다!',
+          created_at: '2026-10-15T10:10:00Z',
+        },
+      ],
+    },
+    {
+      id: 'room-tbl-4',
+      table_id: 'tbl-4',
+      room_name: '📚 [한남동] 토요일 저녁 북토크 & 영화 감성 식탁',
+      active_game_id: null,
+      game_status: 'IDLE',
+      current_round: 0,
+      messages: [
+        {
+          id: 'msg-401',
+          sender_id: 'SYSTEM',
+          sender_name: '우연한 식탁 AI 매니저',
+          message_type: 'SYSTEM',
+          content: '🎬 한남동 오스테리아 루프탑 식탁 라운지입니다. 최근 인상 깊게 본 영화나 책을 하나씩 떠올려보세요!',
+          created_at: '2026-10-15T10:20:00Z',
+        },
+      ],
+    },
+    {
+      id: 'room-tbl-5',
+      table_id: 'tbl-5',
+      room_name: '🏃 [연남동] 위켄드 러닝 & 브런치 소셜 클럽',
+      active_game_id: null,
+      game_status: 'IDLE',
+      current_round: 0,
+      messages: [
+        {
+          id: 'msg-501',
+          sender_id: 'SYSTEM',
+          sender_name: '우연한 식탁 AI 매니저',
+          message_type: 'SYSTEM',
+          content: '🏃 연남동 위켄드 러닝 & 브런치 클럽입니다. 함께 달리고 맛있는 저녁을 나눌 멤버들을 기다리고 있어요!',
+          created_at: '2026-10-15T10:25:00Z',
+        },
+      ],
+    },
+  ],
+
+  gamesCatalog: [
+    {
+      id: 'game-balance',
+      title: '⚖️ 취향 밸런스 월드컵 (Icebreaking Stage 1)',
+      category: '아이스브레이킹',
+      description: '초면의 어색함을 1분 만에 녹이는 2지선다 취향 밸런스 게임! 투표 후 각자 이유를 30초씩 이야기해보세요.',
+      rounds: [
+        {
+          round: 1,
+          question: '금요일 저녁 첫 식탁! 내가 더 선호하는 대화의 온도는?',
+          optionA: '🍽️ 음식 취향을 나누며 요즘 빠져있는 여행·영화 이야기',
+          optionB: '🔥 퇴근 후 본업·사이드프로젝트·인생 목표 인사이트 토크',
+          votesA: ['김민준', '이서연'],
+          votesB: ['박도현', '최지우'],
+        },
+        {
+          round: 2,
+          question: '주말에 갑자기 완벽한 하루의 자유시간이 생긴다면?',
+          optionA: '🎨 핫한 성수/한남 전시회 보러 가고 숨은 맛집 탐방하기',
+          optionB: '🏡 집에서 좋아하는 OTT 정주행하며 배달 맛집 시켜먹기',
+          votesA: ['김민준', '최지우'],
+          votesB: ['이서연'],
+        },
+        {
+          round: 3,
+          question: '새로운 사람들과 친해질 때 나의 필살기 포지션은?',
+          optionA: '🎤 어색한 침묵은 못 참지! 질문 던지고 분위기 띄우는 MC형',
+          optionB: '😊 눈 마주치며 폭풍 리액션과 공감으로 편안하게 해주는 경청형',
+          votesA: ['김민준'],
+          votesB: ['이서연', '박도현', '최지우'],
+        },
+      ],
+    },
+    {
+      id: 'game-smalltalk',
+      title: '🃏 시크릿 질문 카드 덱 (CON-02 맞춤 대화 주제)',
+      category: '스몰토크 덱',
+      description: '테이블 참가자들의 공통 관심사(미식·전시·커리어)를 기반으로 AI가 생성한 3단계 깊이 질문 카드입니다.',
+      rounds: [
+        {
+          round: 1,
+          question: '[Warm-up] 최근 3개월 내 가장 돈 아깝지 않았던 최고의 소비나 식사 경험은 무엇인가요?',
+          optionA: '나의 최고 만족 소비 공유하기',
+          optionB: '다음에 꼭 가보고 싶은 위시리스트 공유하기',
+          votesA: ['김민준', '이서연'],
+          votesB: ['최지우'],
+        },
+        {
+          round: 2,
+          question: '[Deep Talk] 일이나 일상에서 나만의 에너지를 충전하는 루틴(운동, 산책, 취미)이 있다면?',
+          optionA: '몸을 움직이는 액티브 충전파',
+          optionB: '혼자만의 문화·사색 충전파',
+          votesA: ['김민준'],
+          votesB: ['이서연', '박도현'],
+        },
+        {
+          round: 3,
+          question: '[Serendipity] 올해가 가기 전에 꼭 한 번 해보고 싶은 버킷리스트나 새로운 도전은?',
+          optionA: '사이드프로젝트 / 커리어 도전',
+          optionB: '새로운 여행지 / 취미 커뮤니티 도전',
+          votesA: ['박도현'],
+          votesB: ['김민준', '이서연', '최지우'],
+        },
+      ],
+    },
+    {
+      id: 'game-telepathy',
+      title: '⚡ 우리 식탁 텔레파시 & 첫인상 빙고 (미니게임)',
+      category: '테이블 미니게임',
+      description: '우리 테이블 멤버들의 첫인상과 진짜 반전 매력을 맞춰보는 실시간 인터랙티브 미니게임!',
+      rounds: [
+        {
+          round: 1,
+          question: '오늘 우리 식탁에서 첫인상과 실제 성격이 가장 반전일 것 같은 매력의 소유자는?',
+          optionA: '차분해 보이지만 알고 보면 텐션 폭발 ENFP/ENTP 스타일',
+          optionB: '화려해 보이지만 알고 보면 따뜻한 집순이/집돌이 INFJ/ISFP 스타일',
+          votesA: ['김민준', '박도현'],
+          votesB: ['이서연', '최지우'],
+        },
+        {
+          round: 2,
+          question: '오늘 식사가 끝나고 2차로 간다면 우리 테이블 만장일치 코스는?',
+          optionA: '🍰 디저트가 좋은 카페에서 새로운 이야기를 더 나누기',
+          optionB: '☕ 조용한 디저트 카페에서 커피와 달콤한 케이크!',
+          votesA: ['김민준', '박도현', '최지우'],
+          votesB: ['이서연'],
+        },
+      ],
+    },
+  ],
+
+  memberships: [],
+
+  ticketCredits: [],
+
+  feedbacks: [
+    {
+      id: 'fb-1',
+      application_id: 'app-2',
+      user_id: 'usr-2',
+      user_name: '이서연',
+      table_id: 'tbl-1',
+      atmosphere_rating: 5,
+      conversation_rating: 5,
+      venue_rating: 5,
+      rejoin_intent: true,
+      nps_score: 10,
+      liked_user_ids: ['usr-1', 'usr-4'],
+      disliked_user_ids: [],
+      comment: '처음 보는 분들이었는데 나이대도 비슷하고 전시·음식 취향이 겹쳐서 시간 가는 줄 몰랐어요! 다음주에도 또 신청할게요.',
+      created_at: '2026-10-14T22:30:00Z',
+    },
+  ],
+
+  pastMeetHistory: [
+    { userA: 'usr-2', userB: 'usr-6', date: '2026-09-18', table_id: 'tbl-past-09' },
+  ],
+
+  safetyReports: [
+    {
+      id: 'rep-1',
+      reporter_id: 'usr-4',
+      reporter_name: '최지우',
+      reported_user_id: 'usr-99',
+      reported_user_name: '김노쇼 (테스트계정)',
+      table_id: 'tbl-1',
+      reason: '사전 연락 없는 당일 지각 및 영업성 명함 배포 시도',
+      details: '모임 중 본인 투자 모임 홍보를 시도하여 불편했습니다.',
+      status: 'OPEN',
+      admin_action: 'NONE',
+      created_at: '2026-10-14T23:10:00Z',
+    },
+  ],
+
+  exceptionCases: [
+    {
+      id: 'exc-1',
+      exception_type: 'VENUE_SHORTAGE',
+      target_id: 'tbl-5',
+      title: '[식당 재고 부족] 종로/을지로 금요일 저녁 파트너 식당 만석',
+      failure_reason: '을지로 노포살롱 만선 테이블 수용 한도(2/2) 초과로 대체 파트너 식당 자동 탐색 실패 (INF-02 예외)',
+      status: 'OPEN',
+      admin_note: '인근 을지로 식당 제휴처 추가 배정 대기',
+      resolved_at: null,
+      created_at: '2026-10-15T08:15:00Z',
+    },
+    {
+      id: 'exc-2',
+      exception_type: 'CONDITION_CONFLICT',
+      target_id: 'app-6',
+      title: '[자동 재배치 보류] 희망 시간대 4인 미만 & 연령 차이 조건 충돌',
+      failure_reason: '동일 시간대 대기 테이블의 최고령자(37세)와 나이 차이 9세로 필수 조건(8세 이내, MAT-03) 위반하여 강제 배정 차단됨',
+      status: 'OPEN',
+      admin_note: '참가자에게 성수/연남 대체 일정 추천 및 자동 환불 선택권 발송 완료 (STA-04)',
+      resolved_at: null,
+      created_at: '2026-10-15T08:20:00Z',
+    },
+    {
+      id: 'exc-3',
+      exception_type: 'SAFETY_ALERT',
+      target_id: 'rep-1',
+      title: '[안전 신고 접수] 비매너/영업성 참가자 신고 검토 및 향후 매칭 영구 분리',
+      failure_reason: 'SAF-01 신고 접수 즉시 신고자와 피신고자 매칭 알고리즘 영구 분리 조치됨. 운영자 제재 등급 결정 필요',
+      status: 'OPEN',
+      admin_note: '',
+      resolved_at: null,
+      created_at: '2026-10-15T08:40:00Z',
+    },
+  ],
+};
+
+export function evaluateTableClient(user, table, store) {
+  const members = (table.member_ids || [])
+    .map((id) => store.users.find((u) => u.id === id))
+    .filter(Boolean);
+
+  const isFull = members.length >= (table.max_members || 6);
+  const alreadyMember = members.some((m) => m.id === user.id);
+
+  let hasSafetyConflict = false;
+  (store.feedbacks || []).forEach((fb) => {
+    if (fb.user_id === user.id && (fb.disliked_user_ids || []).some((dId) => members.some((m) => m.id === dId))) hasSafetyConflict = true;
+    if (members.some((m) => m.id === fb.user_id) && (fb.disliked_user_ids || []).includes(user.id)) hasSafetyConflict = true;
+  });
+  (store.safetyReports || []).forEach((report) => {
+    const confirmed = report.status === 'RESOLVED' && report.admin_action && report.admin_action !== 'NONE';
+    const conflict = (report.reporter_user_id || report.reporter_id) === user.id
+      ? members.some((m) => m.id === report.reported_user_id)
+      : (report.reported_user_id === user.id && members.some((m) => m.id === (report.reporter_user_id || report.reporter_id)));
+    if (confirmed && conflict) hasSafetyConflict = true;
+  });
+
+  const allAges = [...members.map((m) => Number(m.age || 29)), Number(user.age || 29)];
+  const maxAge = Math.max(...allAges);
+  const minAge = Math.min(...allAges);
+  const ageGap = maxAge - minAge;
+  const ageConstraintPassed = ageGap <= 8;
+
+  const userRegions = user.preferred_regions || ['홍대/연남', '성수/건대'];
+  const regionMatched = userRegions.includes(table.region);
+
+  const ageScore = ageConstraintPassed ? Math.min(25, 25 - Math.max(0, ageGap - 2)) : 0;
+
+  const maleCount = members.filter((m) => m.gender === 'M').length + (user.gender === 'M' ? 1 : 0);
+  const femaleCount = members.filter((m) => m.gender === 'F').length + (user.gender === 'F' ? 1 : 0);
+  const totalCount = maleCount + femaleCount;
+  const ratioDiff = Math.abs(maleCount - femaleCount) / Math.max(1, totalCount);
+  const genderScore = Math.round(20 - ratioDiff * 8);
+
+  const userMbti = user.mbti || 'ENFP';
+  let mbtiScore = 15;
+  members.forEach((m) => {
+    if (m.mbti && m.mbti[1] === userMbti[1]) mbtiScore += 1.5;
+    if (m.mbti && m.mbti[0] !== userMbti[0]) mbtiScore += 1;
+  });
+  mbtiScore = Math.min(20, Math.round(mbtiScore));
+
+  const userInterests = user.interests || [];
+  const tableInterests = new Set();
+  members.forEach((m) => (m.interests || []).forEach((i) => tableInterests.add(i)));
+  const sharedInterests = userInterests.filter((i) => tableInterests.has(i));
+  const interestScore = Math.min(15, 7 + sharedInterests.length * 3);
+
+  const userPreferredPartner = user.preferred_partner || [];
+  const memberVibes = new Set();
+  members.forEach((m) => (m.vibe_self || []).forEach((v) => memberVibes.add(v)));
+  const matchedVibes = userPreferredPartner.filter((p) => memberVibes.has(p));
+  const partnerFitScore = Math.min(10, 6 + matchedVibes.length * 2);
+
+  const metBeforeCount = (store.pastMeetHistory || []).filter(
+    (h) =>
+      (h.userA === user.id && members.some((m) => m.id === h.userB)) ||
+      (h.userB === user.id && members.some((m) => m.id === h.userA))
+  ).length;
+  const priorFeedbacks = (store.feedbacks || []).filter((fb) => fb.user_id === user.id);
+  const ratingValues = priorFeedbacks.flatMap((fb) => [fb.atmosphere_rating, fb.conversation_rating, fb.venue_rating])
+    .map(Number).filter((value) => Number.isFinite(value) && value >= 1 && value <= 5);
+  // PRD 60/40 feedback/history split. Unrated users receive a neutral feedback score, not a fabricated positive one.
+  const feedbackScore = ratingValues.length ? (ratingValues.reduce((sum, value) => sum + value, 0) / ratingValues.length) / 5 * 6 : 3;
+  const newPersonScore = Math.max(0, 4 - metBeforeCount * 1.5);
+  const dataLoopScore = Math.round((feedbackScore + newPersonScore) * 100) / 100;
+
+  const totalScore = Math.min(
+    99,
+    ageScore + genderScore + mbtiScore + interestScore + partnerFitScore + dataLoopScore
+  );
+
+  const reasons = [];
+  if (ageConstraintPassed) {
+    reasons.push(`연장자(${maxAge}세)~막내(${minAge}세) 나이 차이 ${ageGap}세 (8세 이내 통과)`);
+  } else {
+    reasons.push(`연령 차이(${ageGap}세) 8세 초과로 재배치 권장`);
+  }
+  reasons.push(`성비 남 ${maleCount} : 여 ${femaleCount}`);
+  if (sharedInterests.length > 0) {
+    reasons.push(`공통 관심사 [${sharedInterests.join(', ')}] 일치`);
+  }
+  if (regionMatched) {
+    reasons.push(`희망 지역 [${table.region}] 일치`);
+  }
+  reasons.push(`이전 피드백 ${feedbackScore.toFixed(1)}/6점 · 새로운 만남 ${newPersonScore.toFixed(1)}/4점 반영`);
+
+  return {
+    tableId: table.id,
+    passedHardConstraints: !isFull && !hasSafetyConflict && ageConstraintPassed && regionMatched,
+    alreadyMember,
+    isFull,
+    regionMatched,
+    ageConstraintPassed,
+    hasSafetyConflict,
+    ageGap,
+    maxAge,
+    minAge,
+    genderBalanceText: `남 ${maleCount} : 여 ${femaleCount}`,
+    sharedInterests: sharedInterests.length ? sharedInterests : ['맛집 탐방', '스몰토크'],
+    totalScore,
+    breakdown: {
+      ageScore,
+      genderScore,
+      mbtiScore,
+      interestScore,
+      partnerFitScore,
+      dataLoopScore,
+    },
+    explanation: reasons.join(' · '),
+  };
+}
